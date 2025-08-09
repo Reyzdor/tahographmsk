@@ -32,7 +32,15 @@ $color-low: #161820CC;
 }
 
 @mixin container-another {
-    height: 0px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin header-nav-divider-container {
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+    margin: 0;
+    border: none;
 }
 
 /* code */
@@ -125,7 +133,7 @@ $color-low: #161820CC;
     align-items: center;
     gap: 50px;
     padding: 21px 50px 0;
-    margin-right: 40px;
+    margin-right: 50px;
 
     .block-phone-mail,
     .block-mail-info {
@@ -159,7 +167,7 @@ $color-low: #161820CC;
 
     .order-call {
         width: 172px;
-        height: 42.54px;
+        height: 50.54px;
         background-color: #191D2D;
         border-radius: 25px;
         font-family: 'Montserrat', sans-serif;
@@ -167,7 +175,7 @@ $color-low: #161820CC;
         font-size: 11.1px;
         color: #FFFFFF;
         transition: all 3s ease;
-         transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
         will-change: transform;
         backface-visibility: hidden;
         outline: none;
@@ -180,3 +188,22 @@ $color-low: #161820CC;
         transition-duration: 0.1s;
     }
 }
+
+.container-hr {
+    position: relative;
+    margin-top: -50px;
+    margin-bottom: 10px;
+    
+
+    .header-nav-divider {
+        @include header-nav-divider-container;
+        margin: 0   ;
+
+    }
+}
+
+.lists {
+    @include container-another;
+}
+
+

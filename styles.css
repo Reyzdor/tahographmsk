@@ -104,7 +104,7 @@ body {
   align-items: center;
   gap: 50px;
   padding: 21px 50px 0;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 .block-right .block-phone-mail,
 .block-right .block-mail-info {
@@ -137,7 +137,7 @@ body {
 }
 .block-button .order-call {
   width: 172px;
-  height: 42.54px;
+  height: 50.54px;
   background-color: #191D2D;
   border-radius: 25px;
   font-family: "Montserrat", sans-serif;
@@ -156,6 +156,24 @@ body {
 .block-button:active {
   transform: scale(0.98) translate3d(0, 0, 0);
   transition-duration: 0.1s;
+}
+
+.container-hr {
+  position: relative;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+.container-hr .header-nav-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.1), transparent);
+  margin: 0;
+  border: none;
+  margin: 0;
+}
+
+.lists {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
